@@ -1,14 +1,14 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { decrease, increase } from '../store/action/action';
+import { decreaseAsync, increaseAsync } from '../store/action/action';
 
 function Counter() {
   const dispatch = useDispatch();
-  const count = useSelector((state) => state.counter.num);
+  const count = useSelector((state) => state.counter);
   console.log(count);
 
-  const Up = () => dispatch(increase());
-  const Down = () => dispatch(decrease());
+  const Up = () => dispatch(increaseAsync());
+  const Down = () => dispatch(decreaseAsync());
   return (
     <div>
       <div>{count}</div>

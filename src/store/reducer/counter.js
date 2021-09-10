@@ -1,14 +1,11 @@
 import { DECREASE, INCREASE } from '../type/type';
-const initialState = {
-  num: 15,
-  name: '안녕',
-};
+const initialState = 0;
 function counter(state = initialState, action) {
   switch (action.type) {
     case INCREASE:
-      return { ...state, number: state.num + 1 };
+      return state + 1;
     case DECREASE:
-      return { ...state, number: state.num - 1 };
+      return state - 1;
     default:
       return state;
   }
