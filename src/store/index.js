@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux';
-import counterSaga from '../sagas/counterSaga';
-import counter from './counter';
+import counterSaga from './sagas/counterSaga';
+import counter from './reducer/counter';
 import { all } from 'redux-saga/effects';
 
 const rootReducer = combineReducers({ counter });

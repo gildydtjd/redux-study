@@ -13,7 +13,11 @@ const decrease = () => {
   return { type: DECREASE };
 };
 
-const increaseAsync = () => ({ type: INCREASE_ASYNC });
-const decreaseAsync = () => ({ type: DECREASE_ASYNC });
+const increaseAsync = () => {
+  return { type: INCREASE_ASYNC };
+};
+const decreaseAsync = () => {
+  return { type: DECREASE_ASYNC };
+};
 
 export { increase, decrease, increaseAsync, decreaseAsync };

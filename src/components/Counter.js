@@ -4,7 +4,8 @@ import { decrease, increase } from '../store/action/action';
 
 function Counter() {
   const dispatch = useDispatch();
-  const count = useSelector((state) => state.num);
+  const count = useSelector((state) => state.counter.num);
+  console.log(count);
 
   const Up = () => dispatch(increase());
   const Down = () => dispatch(decrease());

@@ -3,7 +3,7 @@ import './App.css';
 import Counter from './components/Counter';
 
 function App() {
-  const count2 = useSelector((state) => state.num);
+  const count2 = useSelector((state) => state.counter.num);
   return (
     <div className="App">
       <Counter />
